@@ -22,19 +22,13 @@ public interface BarberiaMapper {
     @Named("empleadoToEmpleadoDto")
     ReservaDto empleadoToEmpleadoDto(Reserva reserva);
 
-    Reserva empleadoDtoToEmpleado(ReservaDto reservaDto);
+    Reserva empleadoDtoToEmpleado(ReservaDto empleadoDto);
 
     @IterableMapping(qualifiedByName = "empleadoToEmpleadoDto")
-    List<ReservaDto > getEmpleadosDto(List<Reserva> listaEmpleados);
+    List<ReservaDto> getEmpleadosDto(List<Reserva> listaEmpleados);
 
-//    @Named("mappingToEmpeladoDto")
-//    EmpleadoDto mappingToEmpeladoDto(Empleado empleado);
-
-
-    @Mapping(target = "nombre", source = "cliente.nombre")
-    @IterableMapping(qualifiedByName = "cunetaToCuentaDto")
-    ClienteDto  clienteToClienteDto(Cliente cliente);
-
-
+    @Mapping(target = "nombreCliente", source = "Cliente.nombre")
+    @IterableMapping(qualifiedByName = "ClienteToClienteDto")
+    ClienteDto ClienteToClienteDto(Cliente cliente);
 }
 
