@@ -1,6 +1,5 @@
 co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\EmpleadoController.class
 co\edu\unquindio\barberiaglamourfx\barberiaapp\exceptions\EmpleadoException.class
-co\edu\unquindio\barberiaglamourfx\barberiaapp\model\builder\ClienteBuilder.class
 co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\ReservaCitasController.class
 co\edu\unquindio\barberiaglamourfx\barberiaapp\exceptions\ReservaException.class
 co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IReservaCitasControllerService.class
@@ -13,6 +12,7 @@ co\edu\unquindio\barberiaglamourfx\barberiaapp\exceptions\ClienteException.class
 co\edu\unquindio\barberiaglamourfx\barberiaapp\viewController\ReservaViewController.class
 module-info.class
 co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\ClienteController.class
+co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\mappers\BarberiaMapperImpl.class
 co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\dto\ReservaDto.class
 co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IModelFactoryService.class
 co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IEmpleadoControllerService.class
@@ -31,4 +31,3 @@ co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\ModelFactoryController
 co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Persona.class
 co\edu\unquindio\barberiaglamourfx\barberiaapp\viewController\BarberiaViewController.class
 co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\dto\EmpleadoDto.class
-co\edu\unquindio\barberiaglamourfx\barberiaapp\model\builder\EmpleadoBuilder.class

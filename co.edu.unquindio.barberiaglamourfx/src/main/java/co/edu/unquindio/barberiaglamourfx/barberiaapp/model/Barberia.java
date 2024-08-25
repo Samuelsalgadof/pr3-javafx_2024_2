@@ -10,7 +10,13 @@ import java.util.List;
 
 
 public class Barberia implements IBarberiaServices {
+    List<Cliente> listaClientes = new ArrayList<>();
+    List<Empleado> listaEmpleados = new ArrayList<>();
+    List<Reserva> listaReserva = new ArrayList<>();
 
+    public Barberia() {
+
+    }
 
     public List<Cliente> getListaClientes() {
         return listaClientes;
@@ -36,13 +42,8 @@ public class Barberia implements IBarberiaServices {
         this.listaEmpleados = listaEmpleados;
     }
 
-    List<Cliente> listaClientes = new ArrayList<>();
-    List<Empleado> listaEmpleados = new ArrayList<>();
-    List<Reserva> listaReserva = new ArrayList<>();
 
-    public Barberia() {
 
-    }
 
     @Override
     public Reserva crearReserva(String idReserva, String nombreCliente, String precio, String EmpleadoBarbero, String Fecha) throws ReservaException {

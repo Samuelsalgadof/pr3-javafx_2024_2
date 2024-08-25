@@ -1,33 +1,31 @@
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\BarberiaController.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\ClienteController.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\EmpleadoController.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\ModelFactoryController.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\ReservaCitasController.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IBarberiaControllerService.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IClienteControllerService.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IEmpleadoControllerService.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IModelFactoryService.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IReservaCitasControllerService.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\exceptions\ClienteException.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\exceptions\EmpleadoException.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\exceptions\ReservaException.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\HelloApplication.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\HelloController.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\dto\ClienteDto.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\dto\EmpleadoDto.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\dto\ReservaDto.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\mappers\BarberiaMapper.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Barberia.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\builder\ClienteBuilder.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\builder\EmpleadoBuilder.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Cliente.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Empleado.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Persona.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Reserva.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\services\IBarberiaServices.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\Utils\BarberiaUtils.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\viewController\BarberiaViewController.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\viewController\ClienteViewController.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\viewController\EmpleadoViewController.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\viewController\ReservaViewController.java
-C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\module-info.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\BarberiaController.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\ClienteController.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\EmpleadoController.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\ModelFactoryController.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\ReservaCitasController.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IBarberiaControllerService.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IClienteControllerService.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IEmpleadoControllerService.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IModelFactoryService.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IReservaCitasControllerService.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\exceptions\ClienteException.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\exceptions\EmpleadoException.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\exceptions\ReservaException.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\HelloApplication.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\HelloController.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\dto\ClienteDto.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\dto\EmpleadoDto.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\dto\ReservaDto.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\mappers\BarberiaMapper.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Barberia.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Cliente.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Empleado.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Persona.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Reserva.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\services\IBarberiaServices.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\Utils\BarberiaUtils.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\viewController\BarberiaViewController.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\viewController\ClienteViewController.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\viewController\EmpleadoViewController.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\viewController\ReservaViewController.java
+C:\Users\figue\Downloads\co.edu.unquindio.barberiaglamourfx\co.edu.unquindio.barberiaglamourfx\src\main\java\module-info.java

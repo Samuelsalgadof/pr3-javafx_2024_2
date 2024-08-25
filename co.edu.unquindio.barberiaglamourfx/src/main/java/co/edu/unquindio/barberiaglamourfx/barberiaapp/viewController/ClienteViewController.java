@@ -19,5 +19,17 @@ import java.util.ResourceBundle;
 
 public class ClienteViewController {
 
+    public void onEliminarCliente(ActionEvent actionEvent) {
+    }
+
+    public void onLimpiarCliente(ActionEvent actionEvent) {
+    }
+
+    public void onActualizarCliente(ActionEvent actionEvent) {
+    }
+
+    public void onCrearCliente(ActionEvent actionEvent) {
+
+    }
 }
 

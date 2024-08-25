@@ -4,7 +4,8 @@ module co.edu.unquindio.barberiaglamourfx.barberiaapp {
     requires org.mapstruct;
     requires org.controlsfx.controls;
     requires javafx.graphics;
-    requires org.mapstruct.processor;
+
+
 
     opens co.edu.unquindio.barberiaglamourfx.barberiaapp to javafx.fxml;
     exports co.edu.unquindio.barberiaglamourfx.barberiaapp;

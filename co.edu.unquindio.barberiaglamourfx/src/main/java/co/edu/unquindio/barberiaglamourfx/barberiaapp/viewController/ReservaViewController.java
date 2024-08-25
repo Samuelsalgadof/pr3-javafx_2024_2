@@ -2,12 +2,13 @@ package co.edu.unquindio.barberiaglamourfx.barberiaapp.viewController;
 
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.controller.ReservaCitasController;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.ReservaDto;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.fxml.FXML;
+
 
 import java.util.Optional;
 
@@ -71,12 +72,21 @@ public class ReservaViewController {
 
 
          private void initTableReservas() {
+             initDataBindingReservas();
              obtenerReserva();
              tablaReservas.getItems().clear();
              tablaReservas.setItems(listaReservaDto);
              listenerSelectionReserva();
 
         }
+
+    private void initDataBindingReservas() {
+        tcidReserva.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().idReserva()));
+        tcnombreCliente.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().nombreCliente()));
+        tcPrecio.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().precio()));
+        tcbarbero.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().empleadoBarbero()));
+        tcfecha.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().fecha()));
+    }
 
     private void listenerSelectionReserva() {
              tablaReservas.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {

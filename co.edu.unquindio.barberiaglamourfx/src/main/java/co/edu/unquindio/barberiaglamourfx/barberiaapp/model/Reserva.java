@@ -1,7 +1,6 @@
 package co.edu.unquindio.barberiaglamourfx.barberiaapp.model;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+
 
 public class Reserva {
     String idReserva;
@@ -10,18 +9,14 @@ public class Reserva {
     String empleadoBarbero;
     String fecha;
 
-    ArrayList<Cliente>listaClientesAsociados=new ArrayList<Cliente>();
 
-    public ArrayList<Cliente> getListaClientesAsociados() {
-        return listaClientesAsociados;
-    }
 
-    public void setListaClientesAsociados(ArrayList<Cliente> listaClientesAsociados) {
-        this.listaClientesAsociados = listaClientesAsociados;
-    }
 
-    public Reserva(ArrayList<Cliente> listaClientesAsociados, String fecha, String empleadoBarbero, String precio, String nombreCliente, String idReserva) {
-        this.listaClientesAsociados = listaClientesAsociados;
+
+
+
+    public Reserva( String fecha, String empleadoBarbero, String precio, String nombreCliente, String idReserva) {
+
         this.fecha = fecha;
         this.empleadoBarbero = empleadoBarbero;
         this.precio = precio;

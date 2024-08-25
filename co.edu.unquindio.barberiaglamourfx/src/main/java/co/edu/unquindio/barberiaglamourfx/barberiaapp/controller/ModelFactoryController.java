@@ -2,7 +2,7 @@ package co.edu.unquindio.barberiaglamourfx.barberiaapp.controller;
 
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.exceptions.EmpleadoException;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.exceptions.ReservaException;
-import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.EmpleadoDto;
+
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.ReservaDto;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.mappers.BarberiaMapper;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.*;
@@ -50,9 +50,7 @@ public class ModelFactoryController implements IModelFactoryService {
         return barberia;
     }
 
-    public void setBanco(Barberia barberia) {
-        this.barberia = barberia;
-    }
+
 
     @Override
     public List<ReservaDto> obtenerReservas() {

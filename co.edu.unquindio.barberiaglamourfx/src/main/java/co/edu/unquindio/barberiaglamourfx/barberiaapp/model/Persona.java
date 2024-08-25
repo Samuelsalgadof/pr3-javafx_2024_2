@@ -1,9 +1,8 @@
 package co.edu.unquindio.barberiaglamourfx.barberiaapp.model;
 
-import co.edu.unquindio.barberiaglamourfx.barberiaapp.model.builder.EmpleadoBuilder;
-import co.edu.unquindio.barberiaglamourfx.barberiaapp.model.builder.ClienteBuilder;
 
-public class Persona {
+
+public abstract class Persona {
 
     private String nombre;
 

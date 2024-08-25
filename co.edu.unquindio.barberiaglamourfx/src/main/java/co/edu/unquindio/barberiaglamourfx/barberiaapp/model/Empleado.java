@@ -1,6 +1,6 @@
 package co.edu.unquindio.barberiaglamourfx.barberiaapp.model;
 
-import co.edu.unquindio.barberiaglamourfx.barberiaapp.model.builder.ClienteBuilder;
+
 
 public class Empleado extends Persona {
 
@@ -13,7 +13,5 @@ public class Empleado extends Persona {
         super();
     }
 
-    public static ClienteBuilder builder() {
-        return new ClienteBuilder();
-    }
+
 }
