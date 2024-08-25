@@ -15,6 +15,11 @@ public class ModelFactoryController implements IModelFactoryService {
     Barberia barberia;
     BarberiaMapper mapper = BarberiaMapper.INSTANCE;
 
+    public static ModelFactoryController getinstance() {
+            return SingletonHolder.eINSTANCE;
+    }
+
+
     //------------------------------  Singleton ------------------------------------------------
     // Clase estatica oculta. Tan solo se instanciara el singleton una vez
     private static class SingletonHolder {
@@ -54,7 +59,7 @@ public class ModelFactoryController implements IModelFactoryService {
         try{
             if(!barberia.verificarEmpleadoExistente(empleadoDto.cedula())) {
                 Empleado empleado = mapper.empleadoDtoToEmpleado(empleadoDto);
-                getBarberia()).agregarEmpleado(empleado);
+                getBarberia().agregarEmpleado(empleado);
             }
             return true;
         }catch (EmpleadoException e){

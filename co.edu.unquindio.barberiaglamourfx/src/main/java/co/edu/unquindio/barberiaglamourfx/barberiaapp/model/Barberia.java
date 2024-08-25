@@ -2,19 +2,16 @@ package co.edu.unquindio.barberiaglamourfx.barberiaapp.model;
 
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.exceptions.EmpleadoException;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.EmpleadoDto;
-import co.edu.uniquindio.banco.bancouq.model.services.IBancoService;
+import co.edu.unquindio.barberiaglamourfx.barberiaapp.model.services.IBarberiaServices;
 
 import java.util.ArrayList;
 
 
-public class Barberia implements IBaService {
-    private static final long serialVersionUID = 1L;
+public class Barberia implements IBarberiaServices {
     ArrayList<Cliente> listaClientes = new ArrayList<>();
     ArrayList<Empleado> listaEmpleados = new ArrayList<>();
-    ArrayList<Cuenta> listaCuentas = new ArrayList<>();
-    ArrayList<Transaccion> listaTransaccionesAsociadas = new ArrayList<Transaccion>();
 
-    public Banco() {
+    public Barberia() {
 
     }
 
@@ -34,27 +31,19 @@ public class Barberia implements IBaService {
         this.listaEmpleados = listaEmpleados;
     }
 
-    public ArrayList<Cuenta> getListaCuentas() {
-        return listaCuentas;
-    }
-
-
-    public void setListaCuentas(ArrayList<Cuenta> listaCuentas) {
-        this.listaCuentas = listaCuentas;
-    }
-
-
-    public ArrayList<Transaccion> getListaTransaccionesAsociadas() {
-        return listaTransaccionesAsociadas;
-    }
-
-
-    public void setListaTransaccionesAsociadas(ArrayList<Transaccion> listaTransaccionesAsociadas) {
-        this.listaTransaccionesAsociadas = listaTransaccionesAsociadas;
+    public boolean empleadoExiste(String cedula) {
+        boolean empleadoEncontrado = false;
+        for (Empleado empleado : getListaEmpleados()) {
+            if (empleado.getCedula().equalsIgnoreCase(cedula)) {
+                empleadoEncontrado = true;
+                break;
+            }
+        }
+        return empleadoEncontrado;
     }
 
     @Override
-    public Empleado crearEmpleado(String nombre, String apellido, String cedula, String fechaNacimiento) throws EmpleadoException{
+    public Empleado crearEmpleado(String nombre, String cedula, String email, String celular, int edad) throws EmpleadoException {
         Empleado nuevoEmpleado = null;
         boolean empleadoExiste = verificarEmpleadoExistente(cedula);
         if(empleadoExiste){
@@ -62,7 +51,7 @@ public class Barberia implements IBaService {
         }else{
             nuevoEmpleado = new Empleado();
             nuevoEmpleado.setNombre(nombre);
-            nuevoEmpleado.setApellido(apellido);
+            nuevoEmpleado.setCedula(cedula);
             nuevoEmpleado.setCedula(cedula);
             nuevoEmpleado.setFechaNacimiento(fechaNacimiento);
             getListaEmpleados().add(nuevoEmpleado);
@@ -70,78 +59,28 @@ public class Barberia implements IBaService {
         return nuevoEmpleado;
     }
 
-    public void agregarEmpleado(Empleado nuevoEmpleado) throws EmpleadoException{
-        getListaEmpleados().add(nuevoEmpleado);
+    @Override
+    public Boolean eliminarEmpleado(String cedula) throws EmpleadoException {
+        return null;
     }
 
     @Override
     public boolean actualizarEmpleado(String cedulaActual, Empleado empleado) throws EmpleadoException {
-        Empleado empleadoActual = obtenerEmpleado(cedulaActual);
-        if(empleadoActual == null)
-            throw new EmpleadoException("El empleado a actualizar no existe");
-        else{
-            empleadoActual.setNombre(empleado.getNombre());
-            empleadoActual.setApellido(empleado.getApellido());
-            empleadoActual.setCedula(empleado.getCedula());
-            empleadoActual.setTelefono(empleado.getTelefono());
-            empleadoActual.setCorreo(empleado.getCorreo());
-            empleadoActual.setFechaNacimiento(empleado.getFechaNacimiento());
-            empleadoActual.setSalario(empleado.getSalario());
-            empleadoActual.setCodigo(empleado.getCodigo());
-            return true;
-        }
-    }
-
-    @Override
-    public Boolean eliminarEmpleado(String cedula) throws EmpleadoException {
-        Empleado empleado = null;
-        boolean flagExiste = false;
-        empleado = obtenerEmpleado(cedula);
-        if(empleado == null)
-            throw new EmpleadoException("El empleado a eliminar no existe");
-        else{
-            getListaEmpleados().remove(empleado);
-            flagExiste = true;
-        }
-        return flagExiste;
+        return false;
     }
 
     @Override
     public boolean verificarEmpleadoExistente(String cedula) throws EmpleadoException {
-        if(empleadoExiste(cedula)){
-            throw new EmpleadoException("El empleado con cedula: "+cedula+" ya existe");
-        }else{
-            return false;
-        }
+        return false;
     }
-
 
     @Override
     public Empleado obtenerEmpleado(String cedula) {
-        Empleado empleadoEncontrado = null;
-        for (Empleado empleado : getListaEmpleados()) {
-            if(empleado.getCedula().equalsIgnoreCase(cedula)){
-                empleadoEncontrado = empleado;
-                break;
-            }
-        }
-        return empleadoEncontrado;
+        return null;
     }
 
     @Override
     public ArrayList<Empleado> obtenerEmpleados() {
-        // TODO Auto-generated method stub
-        return getListaEmpleados();
-    }
-
-    public boolean empleadoExiste(String cedula) {
-        boolean empleadoEncontrado = false;
-        for (Empleado empleado : getListaEmpleados()) {
-            if(empleado.getCedula().equalsIgnoreCase(cedula)){
-                empleadoEncontrado = true;
-                break;
-            }
-        }
-        return empleadoEncontrado;
+        return null;
     }
 }

@@ -13,12 +13,7 @@ public class EmpleadoController implements IEmpleadoControllerService {
         modelFactoryController = ModelFactoryController.getInstance();
     }
 
-    public List<EmpleadoDto> obtenerEmpleados() {
-        return modelFactoryController.obtenerEmpleados();
-    }
-
-    public Empleado obtenerEmpleados() {
-        return modelFactoryController.obtenerEmpleados();
+    public List<EmpleadoDto> obtenerEmpleados() {return modelFactoryController.obtenerEmpleados();
     }
 
     @Override

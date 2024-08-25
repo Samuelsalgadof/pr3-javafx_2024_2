@@ -29,7 +29,7 @@ public interface BarberiaMapper {
 //    EmpleadoDto mappingToEmpeladoDto(Empleado empleado);
 
 
-    @Mapping(target = "nombreCliente", source = "cliente.nombre")
+    @Mapping(target = "nombre", source = "cliente.nombre")
     @IterableMapping(qualifiedByName = "cunetaToCuentaDto")
     ClienteDto clienteToClienteDto(Cliente cliente);
 

@@ -1,6 +1,7 @@
 package co.edu.unquindio.barberiaglamourfx.barberiaapp.viewController;
 
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.controller.EmpleadoController;
+import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.EmpleadoDto;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.model.Empleado;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -19,7 +20,7 @@ import java.util.ResourceBundle;
 
 public class EmpleadoViewController {
     EmpleadoController empleadoControllerService;
-    ObservableList<Empleado> listaEmpleados = FXCollections.observableArrayList();
+    ObservableList<EmpleadoDto> listaEmpleados = FXCollections.observableArrayList();
 
     FilteredList<Empleado> filteredData = new FilteredList<>(FXCollections.observableList(listaEmpleados));
 
