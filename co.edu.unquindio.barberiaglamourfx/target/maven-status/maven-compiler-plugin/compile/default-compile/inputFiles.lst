@@ -10,10 +10,12 @@ C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unq
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\controller\service\IReservaCitasControllerService.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\exceptions\ClienteException.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\exceptions\EmpleadoException.java
+C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\exceptions\ReservaException.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\HelloApplication.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\HelloController.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\dto\ClienteDto.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\dto\EmpleadoDto.java
+C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\dto\ReservaDto.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\mapping\mappers\BarberiaMapper.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Barberia.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\builder\ClienteBuilder.java
@@ -21,6 +23,7 @@ C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unq
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Cliente.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Empleado.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Persona.java
+C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\Reserva.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\model\services\IBarberiaServices.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\Utils\BarberiaUtils.java
 C:\Users\Santiago\Desktop\Programacion 2 Uniquindio\pr3-javafx_2024_2\co.edu.unquindio.barberiaglamourfx\src\main\java\co\edu\unquindio\barberiaglamourfx\barberiaapp\viewController\BarberiaViewController.java
