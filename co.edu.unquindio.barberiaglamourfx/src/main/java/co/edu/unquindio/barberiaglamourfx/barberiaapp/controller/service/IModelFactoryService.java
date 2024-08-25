@@ -2,6 +2,7 @@ package co.edu.unquindio.barberiaglamourfx.barberiaapp.controller.service;
 
 
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.EmpleadoDto;
+import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.ReservaDto;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,12 +10,13 @@ import java.util.List;
 
 public interface IModelFactoryService {
 
-    List<EmpleadoDto> obtenerEmpleados();
-    boolean agregarEmpleado(EmpleadoDto empleadoDto);
+    List<ReservaDto> obtenerReservas();
 
-    boolean eliminarEmpleado(String cedula);
+    boolean agregarReserva(ReservaDto reservaDto);
 
-    boolean actualizarEmpleado(String cedulaActual, EmpleadoDto empleadoDto);
+    boolean eliminarReserva(String idReserva);
+
+    boolean actualizarReserva(String idReservaActual, ReservaDto reservaDto);
 
 
 }

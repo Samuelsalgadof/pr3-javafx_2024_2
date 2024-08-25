@@ -1,9 +1,11 @@
 package co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.mappers;
 
-import co.edu.unquindio.barberiaglamourfx.barberiaapp.dto.ClienteDto;
-import co.edu.unquindio.barberiaglamourfx.barberiaapp.dto.EmpleadoDto;
+import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.ClienteDto;
+import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.EmpleadoDto;
+import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.ReservaDto;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.model.Cliente;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.model.Empleado;
+import co.edu.unquindio.barberiaglamourfx.barberiaapp.model.Reserva;
 import org.mapstruct.IterableMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -18,20 +20,20 @@ public interface BarberiaMapper {
     BarberiaMapper INSTANCE = Mappers.getMapper(BarberiaMapper.class);
 
     @Named("empleadoToEmpleadoDto")
-    EmpleadoDto empleadoToEmpleadoDto(Empleado empleado);
+    ReservaDto empleadoToEmpleadoDto(Reserva reserva);
 
-    Empleado empleadoDtoToEmpleado(EmpleadoDto empleadoDto);
+    Reserva empleadoDtoToEmpleado(ReservaDto reservaDto);
 
     @IterableMapping(qualifiedByName = "empleadoToEmpleadoDto")
-    List<EmpleadoDto> getEmpleadosDto(List<Empleado> listaEmpleados);
+    List<ReservaDto > getEmpleadosDto(List<Reserva> listaEmpleados);
 
 //    @Named("mappingToEmpeladoDto")
 //    EmpleadoDto mappingToEmpeladoDto(Empleado empleado);
 
 
-    @Mapping(target = "nombreCliente", source = "cliente.nombre")
+    @Mapping(target = "nombre", source = "cliente.nombre")
     @IterableMapping(qualifiedByName = "cunetaToCuentaDto")
-    ClienteDto clienteToClienteDto(Cliente cliente);
+    ClienteDto  clienteToClienteDto(Cliente cliente);
 
 
 }

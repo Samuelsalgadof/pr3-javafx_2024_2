@@ -48,4 +48,24 @@ public class Persona {
     public int getEdad() {
         return edad;
     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setCelular(String celular) {
+        this.celular = celular;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 }

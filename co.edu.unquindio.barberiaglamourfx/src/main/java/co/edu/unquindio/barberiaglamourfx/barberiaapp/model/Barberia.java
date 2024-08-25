@@ -1,147 +1,138 @@
 package co.edu.unquindio.barberiaglamourfx.barberiaapp.model;
 
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.exceptions.EmpleadoException;
+import co.edu.unquindio.barberiaglamourfx.barberiaapp.exceptions.ReservaException;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.EmpleadoDto;
-import co.edu.uniquindio.banco.bancouq.model.services.IBancoService;
+import co.edu.unquindio.barberiaglamourfx.barberiaapp.model.services.IBarberiaServices;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
-public class Barberia implements IBaService {
-    private static final long serialVersionUID = 1L;
-    ArrayList<Cliente> listaClientes = new ArrayList<>();
-    ArrayList<Empleado> listaEmpleados = new ArrayList<>();
-    ArrayList<Cuenta> listaCuentas = new ArrayList<>();
-    ArrayList<Transaccion> listaTransaccionesAsociadas = new ArrayList<Transaccion>();
+public class Barberia implements IBarberiaServices {
 
-    public Banco() {
 
-    }
-
-    public ArrayList<Cliente> getListaClientes() {
+    public List<Cliente> getListaClientes() {
         return listaClientes;
     }
 
-    public void setListaClientes(ArrayList<Cliente> listaClientes) {
+    public void setListaClientes(List<Cliente> listaClientes) {
         this.listaClientes = listaClientes;
     }
 
-    public ArrayList<Empleado> getListaEmpleados() {
+    public List<Reserva> getListaReserva() {
+        return listaReserva;
+    }
+
+    public void setListaReserva(List<Reserva> listaReserva) {
+        this.listaReserva = listaReserva;
+    }
+
+    public List<Empleado> getListaEmpleados() {
         return listaEmpleados;
     }
 
-    public void setListaEmpleados(ArrayList<Empleado> listaEmpleados) {
+    public void setListaEmpleados(List<Empleado> listaEmpleados) {
         this.listaEmpleados = listaEmpleados;
     }
 
-    public ArrayList<Cuenta> getListaCuentas() {
-        return listaCuentas;
-    }
+    List<Cliente> listaClientes = new ArrayList<>();
+    List<Empleado> listaEmpleados = new ArrayList<>();
+    List<Reserva> listaReserva = new ArrayList<>();
 
+    public Barberia() {
 
-    public void setListaCuentas(ArrayList<Cuenta> listaCuentas) {
-        this.listaCuentas = listaCuentas;
-    }
-
-
-    public ArrayList<Transaccion> getListaTransaccionesAsociadas() {
-        return listaTransaccionesAsociadas;
-    }
-
-
-    public void setListaTransaccionesAsociadas(ArrayList<Transaccion> listaTransaccionesAsociadas) {
-        this.listaTransaccionesAsociadas = listaTransaccionesAsociadas;
     }
 
     @Override
-    public Empleado crearEmpleado(String nombre, String apellido, String cedula, String fechaNacimiento) throws EmpleadoException{
-        Empleado nuevoEmpleado = null;
-        boolean empleadoExiste = verificarEmpleadoExistente(cedula);
-        if(empleadoExiste){
-            throw new EmpleadoException("El empleado con cedula: "+cedula+" ya existe");
-        }else{
-            nuevoEmpleado = new Empleado();
-            nuevoEmpleado.setNombre(nombre);
-            nuevoEmpleado.setApellido(apellido);
-            nuevoEmpleado.setCedula(cedula);
-            nuevoEmpleado.setFechaNacimiento(fechaNacimiento);
-            getListaEmpleados().add(nuevoEmpleado);
+    public Reserva crearReserva(String idReserva, String nombreCliente, String precio, String EmpleadoBarbero, String Fecha) throws ReservaException {
+        Reserva nuevoReserva = null;
+        boolean reservaExiste = verificarReservaExistente(idReserva);
+        if (reservaExiste) {
+            throw new EmpleadoException("El empleado con cedula: " + idReserva + " ya existe");
+        } else {
+            nuevoReserva = new Reserva();
+            nuevoReserva.setIdReserva(idReserva);
+            nuevoReserva.setNombreCliente(nombreCliente);
+            nuevoReserva.setPrecio(precio);
+            nuevoReserva.setEmpleadoBarbero(EmpleadoBarbero);
+            nuevoReserva.setFecha(Fecha);
+            getListaReserva().add(nuevoReserva);
         }
-        return nuevoEmpleado;
-    }
+        return nuevoReserva;
 
-    public void agregarEmpleado(Empleado nuevoEmpleado) throws EmpleadoException{
-        getListaEmpleados().add(nuevoEmpleado);
     }
 
     @Override
-    public boolean actualizarEmpleado(String cedulaActual, Empleado empleado) throws EmpleadoException {
-        Empleado empleadoActual = obtenerEmpleado(cedulaActual);
-        if(empleadoActual == null)
-            throw new EmpleadoException("El empleado a actualizar no existe");
-        else{
-            empleadoActual.setNombre(empleado.getNombre());
-            empleadoActual.setApellido(empleado.getApellido());
-            empleadoActual.setCedula(empleado.getCedula());
-            empleadoActual.setTelefono(empleado.getTelefono());
-            empleadoActual.setCorreo(empleado.getCorreo());
-            empleadoActual.setFechaNacimiento(empleado.getFechaNacimiento());
-            empleadoActual.setSalario(empleado.getSalario());
-            empleadoActual.setCodigo(empleado.getCodigo());
-            return true;
-        }
-    }
-
-    @Override
-    public Boolean eliminarEmpleado(String cedula) throws EmpleadoException {
-        Empleado empleado = null;
+    public Boolean eliminarReserva(String idReserva) throws ReservaException {
+        Reserva reserva = null;
         boolean flagExiste = false;
-        empleado = obtenerEmpleado(cedula);
-        if(empleado == null)
-            throw new EmpleadoException("El empleado a eliminar no existe");
-        else{
-            getListaEmpleados().remove(empleado);
+        reserva = obtenerReservas(idReserva);
+        if (reserva == null)
+            throw new ReservaException("El empleado a eliminar no existe");
+        else {
+            getListaEmpleados().remove(reserva);
             flagExiste = true;
         }
         return flagExiste;
     }
 
     @Override
-    public boolean verificarEmpleadoExistente(String cedula) throws EmpleadoException {
-        if(empleadoExiste(cedula)){
-            throw new EmpleadoException("El empleado con cedula: "+cedula+" ya existe");
-        }else{
+    public boolean actualizarReserva(String idReservaActual, Reserva reserva) throws ReservaException {
+        Reserva reservaActual = obtenerReservas(idReservaActual);
+        if (reservaActual == null)
+            throw new ReservaException("El empleado a actualizar no existe");
+        else {
+            reservaActual.setIdReserva(reserva.getIdReserva());
+            reservaActual.setNombreCliente(reserva.getNombreCliente());
+            reservaActual.setPrecio(reserva.getPrecio());
+            reservaActual.setEmpleadoBarbero(reserva.getEmpleadoBarbero());
+            reservaActual.setFecha(reserva.getFecha());
+            return true;
+        }
+    }
+
+    @Override
+    public boolean verificarReservaExistente(String idReserva) throws ReservaException {
+        if (reservaExiste(idReserva)) {
+            throw new ReservaException("La reserva con IdReserva: " + idReserva + " ya existe");
+        } else {
             return false;
         }
     }
 
 
     @Override
-    public Empleado obtenerEmpleado(String cedula) {
-        Empleado empleadoEncontrado = null;
-        for (Empleado empleado : getListaEmpleados()) {
-            if(empleado.getCedula().equalsIgnoreCase(cedula)){
-                empleadoEncontrado = empleado;
+    public Reserva obtenerReservas(String idReserva) {
+        Reserva reservaEncontrada = null;
+        for (Reserva reserva : getListaReserva()) {
+            if(reserva.getIdReserva().equalsIgnoreCase(idReserva)){
+                reservaEncontrada = reserva;
                 break;
             }
         }
-        return empleadoEncontrado;
+        return reservaEncontrada;
     }
 
     @Override
-    public ArrayList<Empleado> obtenerEmpleados() {
+    public ArrayList<Reserva> obtenerReserva() {
         // TODO Auto-generated method stub
-        return getListaEmpleados();
+        return (ArrayList<Reserva>) getListaReserva();
     }
 
-    public boolean empleadoExiste(String cedula) {
-        boolean empleadoEncontrado = false;
-        for (Empleado empleado : getListaEmpleados()) {
-            if(empleado.getCedula().equalsIgnoreCase(cedula)){
-                empleadoEncontrado = true;
+    private boolean reservaExiste(String idReserva) {
+        boolean reservaEncontrada = false;
+        for (Reserva reserva : getListaReserva()) {
+            if (reserva.getIdReserva().equalsIgnoreCase(idReserva)) {
+                reservaEncontrada = true;
                 break;
             }
         }
-        return empleadoEncontrado;
+        return reservaEncontrada;
+
+    }
+    public void agregarReserva(Reserva nuevoReserva) throws ReservaException {
+        getListaReserva().add(nuevoReserva);
+
     }
 }

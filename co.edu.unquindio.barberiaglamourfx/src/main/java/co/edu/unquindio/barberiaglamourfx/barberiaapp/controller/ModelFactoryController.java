@@ -1,7 +1,9 @@
 package co.edu.unquindio.barberiaglamourfx.barberiaapp.controller;
 
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.exceptions.EmpleadoException;
+import co.edu.unquindio.barberiaglamourfx.barberiaapp.exceptions.ReservaException;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.EmpleadoDto;
+import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.dto.ReservaDto;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.mapping.mappers.BarberiaMapper;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.*;
 import co.edu.unquindio.barberiaglamourfx.barberiaapp.model.*;
@@ -14,6 +16,15 @@ import java.util.List;
 public class ModelFactoryController implements IModelFactoryService {
     Barberia barberia;
     BarberiaMapper mapper = BarberiaMapper.INSTANCE;
+
+    public static ModelFactoryController getinstance() {
+            return SingletonHolder.eINSTANCE;
+    }
+
+    public void setBarberia(Barberia barberia) {
+        this.barberia = barberia;
+    }
+
 
     //------------------------------  Singleton ------------------------------------------------
     // Clase estatica oculta. Tan solo se instanciara el singleton una vez
@@ -43,32 +54,31 @@ public class ModelFactoryController implements IModelFactoryService {
         this.barberia = barberia;
     }
 
-
     @Override
-    public List<EmpleadoDto> obtenerEmpleados() {
-        return  mapper.getEmpleadosDto(barberia.getListaEmpleados());
+    public List<ReservaDto> obtenerReservas() {
+        return  mapper.getEmpleadosDto(barberia.getListaReserva());
     }
 
     @Override
-    public boolean agregarEmpleado(EmpleadoDto empleadoDto) {
+    public boolean agregarReserva(ReservaDto reservaDto) {
         try{
-            if(!barberia.verificarEmpleadoExistente(empleadoDto.cedula())) {
-                Empleado empleado = mapper.empleadoDtoToEmpleado(empleadoDto);
-                getBarberia()).agregarEmpleado(empleado);
+            if(!barberia.verificarReservaExistente(reservaDto.idReserva())) {
+                Reserva reserva = mapper.empleadoDtoToEmpleado(reservaDto);
+                getBarberia().agregarReserva(reserva);
             }
             return true;
-        }catch (EmpleadoException e){
+        }catch (ReservaException e){
             e.getMessage();
             return false;
         }
     }
 
     @Override
-    public boolean eliminarEmpleado(String cedula) {
+    public boolean eliminarReserva(String idReserva) {
         boolean flagExiste = false;
         try {
-            flagExiste = getanco().eliminarEmpleado(cedula);
-        } catch (EmpleadoException e) {
+            flagExiste = getBarberia().eliminarReserva(idReserva);
+        } catch (ReservaException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
@@ -76,15 +86,17 @@ public class ModelFactoryController implements IModelFactoryService {
     }
 
     @Override
-    public boolean actualizarEmpleado(String cedulaActual, EmpleadoDto empleadoDto) {
+    public boolean actualizarReserva(String idReservaActual, ReservaDto reservaDto) {
         try {
-            Empleado empleado = mapper.empleadoDtoToEmpleado(empleadoDto);
-            getBanco().actualizarEmpleado(cedulaActual, empleado);
+            Reserva reserva = mapper.empleadoDtoToEmpleado(reservaDto);
+            getBarberia().actualizarReserva(idReservaActual, reserva);
             return true;
-        } catch (EmpleadoException e) {
+        } catch (ReservaException e) {
             e.printStackTrace();
             return false;
         }
     }
+
+
 }
 

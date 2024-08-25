@@ -10,64 +10,48 @@ public class BarberiaUtils {
         Barberia barberia = new Barberia();
 
         Cliente cliente = new Cliente();
-        cliente.getNombre("juan");
-        cliente.getCedula("81298812");
-        cliente.getEmail("figuerojuan1991@gmail.com");
-        cliente.getEdad("13");
+        cliente.setNombre("juan");
+        cliente.setCedula("81298812");
+        cliente.setEmail("figuerojuan1991@gmail.com");
+        cliente.setCelular("3046758399");
+        cliente.setEdad(43);
         barberia.getListaClientes().add(cliente);
 
         cliente = new Cliente();
-        cliente.getNombre("Zara");
-        cliente.getCedula("813313");
-        cliente.getEmail("Zara1994@gmail.com");
-        cliente.getEdad("34");
+        cliente.setNombre("Zara");
+        cliente.setCedula("813313");
+        cliente.setEmail("Zara1994@gmail.com");
+        cliente.setCelular("3236758320");
+        cliente.setEdad(34);
         barberia.getListaClientes().add(cliente);
 
 
         cliente = new Cliente();
-        cliente.getNombre("Pablo");
-        cliente.getCedula("814414");
-        cliente.getEmail("figueroPablo1991@gmail.com");
-        cliente.getEdad("13");
+        cliente.setNombre("Pablo");
+        cliente.setCedula("814414");
+        cliente.setEmail("figueroPablo1991@gmail.com");
+        cliente.setCelular("3175754689");
+        cliente.setEdad(22);
         barberia.getListaClientes().add(cliente);
 
         Empleado empleado = new Empleado();
-        empleado.se("juan");
-        empleado.setApellido("arias");
+        empleado.setNombre("juan");
         empleado.setCedula("125454");
-        empleado.setTelefono("314");
-        empleado.setDireccion("Armenia");
-        empleado.setCorreo("aasfa@gmail.om");
-        empleado.setFechaNacimiento("13-08-2000");
-        empleado.setSalario(500000.0);
-        empleado.setCodigo("123");
-        banco.getListaEmpleados().add(empleado);
+        empleado.setEmail("aasfa@gmail.om");
+        empleado.setCelular("3146754322");
+        empleado.setEdad(19);
+        barberia.getListaEmpleados().add(empleado);
 
         empleado = new Empleado();
         empleado.setNombre("Ana");
-        empleado.setApellido("alzate");
         empleado.setCedula("125454");
-        empleado.setTelefono("314");
-        empleado.setDireccion("Circasia");
-        empleado.setCorreo("ana@gmail.om");
-        empleado.setFechaNacimiento("21-08-2000");
-        empleado.setSalario(600000.0);
-        empleado.setCodigo("123");
-        banco.getListaEmpleados().add(empleado);
+        empleado.setEmail("ana@gmail.om");
+        empleado.setCelular("3106754752");
+        empleado.setEdad(39);
+        barberia.getListaEmpleados().add(empleado);
 
-        empleado = new Empleado();
-        empleado.setNombre("Pedro");
-        empleado.setApellido("perez");
-        empleado.setCedula("125454");
-        empleado.setTelefono("314");
-        empleado.setDireccion("Quimbaya");
-        empleado.setCorreo("aasfa@gmail.om");
-        empleado.setFechaNacimiento("01-08-2000");
-        empleado.setSalario(700000.0);
-        empleado.setCodigo("123");
-        banco.getListaEmpleados().add(empleado);
-        System.out.println("Información del banco creada");
-        return banco;
+        System.out.println("Información de la barberia creada");
+        return barberia;
     }
 }
 
