@@ -251,11 +251,11 @@ public class ReservaViewController {
     @FXML
         void onLimpiarReserva(ActionEvent event) {
 
-        txtidReserva.setText("Ingrese el ID de la reserva");
-        txtnombreCliente.setText("Ingrese el nombre del cliente");
-        txtprecioReserva.setText("Ingrese el precio de la reserva");
-        txtbarbero.setText("Ingrese el nombre del barbero");
-        txtfechaReserva.setText("Ingrese la fecha de la reserva");
+        txtidReserva.setText("");
+        txtnombreCliente.setText("");
+        txtprecioReserva.setText("");
+        txtbarbero.setText("");
+        txtfechaReserva.setText("");
 
         }
 
